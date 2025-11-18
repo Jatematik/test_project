@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { colors } from '../../../theme/colors';
+import { fontFamily } from '../../../theme/fonts';
 
 export const styles = StyleSheet.create({
   container: {
@@ -11,11 +12,11 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.border,
   },
   title: {
+    fontFamily: fontFamily.semiBold,
     paddingTop: 16,
     paddingHorizontal: 16,
     color: colors.textSecondary,
     fontSize: 12,
-    fontWeight: 700,
     textTransform: 'uppercase',
   },
 });

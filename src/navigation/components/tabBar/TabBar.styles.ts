@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { colors } from '../../../theme/colors';
+import { fontFamily } from '../../../theme/fonts';
 
 export const styles = StyleSheet.create({
   tabContainer: {
@@ -18,6 +19,7 @@ export const styles = StyleSheet.create({
     flexGrow: 1,
   },
   tabText: {
+    fontFamily: fontFamily.regular,
     fontSize: 14,
     textTransform: 'none',
   },

@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { colors } from '../../theme/colors';
+import { fontFamily } from '../../theme/fonts';
 
 export const styles = StyleSheet.create({
   container: {
@@ -20,21 +21,23 @@ export const styles = StyleSheet.create({
     gap: 4,
   },
   title: {
-    fontWeight: 500,
+    fontFamily: fontFamily.medium,
     fontSize: 14,
     color: colors.white,
   },
   cash: {
-    fontWeight: 700,
+    fontFamily: fontFamily.semiBold,
     fontSize: 21,
     color: colors.medium,
   },
   message: {
+    fontFamily: fontFamily.regular,
     fontSize: 14,
     color: colors.textSecondary,
     lineHeight: 18,
   },
   date: {
+    fontFamily: fontFamily.regular,
     fontSize: 12,
     color: colors.gray,
   },

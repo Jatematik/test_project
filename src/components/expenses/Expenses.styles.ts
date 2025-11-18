@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { colors } from '../../theme/colors';
+import { fontFamily } from '../../theme/fonts';
 
 export const styles = StyleSheet.create({
   container: {
@@ -12,14 +13,17 @@ export const styles = StyleSheet.create({
     marginBottom: 16,
   },
   title: {
+    fontFamily: fontFamily.medium,
     color: colors.white,
     fontWeight: 500,
     fontSize: 21,
   },
   month: {
+    fontFamily: fontFamily.medium,
     color: colors.medium,
   },
   money: {
+    fontFamily: fontFamily.regular,
     color: colors.textSecondary,
     fontSize: 18,
   },
@@ -54,6 +58,7 @@ export const styles = StyleSheet.create({
     flex: 1 / 4,
   },
   sectionTitle: {
+    fontFamily: fontFamily.medium,
     marginTop: 24,
     marginBottom: 10,
     fontWeight: 500,

@@ -10,7 +10,7 @@ const DATA: {
   data: NotificationProps[];
 }[] = [
   {
-    title: 'Today',
+    title: 'Today, 17 JunE',
     data: [
       {
         id: '1',
@@ -66,7 +66,6 @@ export const AllNotificationsScreen = () => {
     <View style={styles.container}>
       <SectionList
         sections={DATA}
-        scrollEnabled={false}
         keyExtractor={(item, index) => item.id + index}
         renderItem={({ item }) => <Notification key={item.id} item={item} />}
         renderSectionHeader={({ section: { title } }) => (

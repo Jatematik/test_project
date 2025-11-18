@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { colors } from '../../theme/colors';
+import { fontFamily } from '../../theme/fonts';
 
 export const styles = StyleSheet.create({
   container: {
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontWeight: 500,
+    fontFamily: fontFamily.medium,
     fontSize: 21,
     color: colors.white,
   },

@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { colors } from '../../theme/colors';
+import { fontFamily } from '../../theme/fonts';
 
 export const styles = StyleSheet.create({
   container: {
@@ -15,15 +16,26 @@ export const styles = StyleSheet.create({
     gap: 12,
   },
   textWrapper: { justifyContent: 'space-between' },
-  name: { fontSize: 14, fontWeight: 500, color: colors.white },
-  purpose: { fontSize: 14, color: colors.date },
+  name: {
+    fontFamily: fontFamily.medium,
+    fontSize: 14,
+    fontWeight: 500,
+    color: colors.white,
+  },
+  purpose: { fontFamily: fontFamily.regular, fontSize: 14, color: colors.date },
   cash: {
+    fontFamily: fontFamily.medium,
     fontSize: 14,
     fontWeight: 500,
     color: colors.white,
     marginLeft: 'auto',
   },
-  date: { fontSize: 14, color: colors.date, marginLeft: 'auto' },
+  date: {
+    fontFamily: fontFamily.regular,
+    fontSize: 14,
+    color: colors.date,
+    marginLeft: 'auto',
+  },
   purposeWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
