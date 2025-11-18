@@ -1,0 +1,1 @@
+export { ChatsIcon } from './ChatsIcon';

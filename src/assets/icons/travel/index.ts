@@ -1,0 +1,1 @@
+export { TravelIcon } from './TravelIcon';
