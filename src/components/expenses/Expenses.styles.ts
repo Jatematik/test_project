@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme/colors';
 
 export const styles = StyleSheet.create({
   container: {
@@ -11,15 +12,15 @@ export const styles = StyleSheet.create({
     marginBottom: 16,
   },
   title: {
-    color: '#fff',
+    color: colors.white,
     fontWeight: 500,
     fontSize: 21,
   },
   month: {
-    color: '#FE5900',
+    color: colors.medium,
   },
   money: {
-    color: '#AEAEAE',
+    color: colors.textSecondary,
     fontSize: 18,
   },
   barContainer: {
@@ -31,32 +32,32 @@ export const styles = StyleSheet.create({
   bar1: {
     borderRadius: 3,
     height: 8,
-    backgroundColor: '#CC3F02',
+    backgroundColor: colors.high,
     flex: 1,
   },
   bar2: {
     borderRadius: 3,
     height: 8,
-    backgroundColor: '#FE5900',
+    backgroundColor: colors.medium,
     flex: 1 / 2,
   },
   bar3: {
     borderRadius: 3,
     height: 8,
-    backgroundColor: '#FF9332',
+    backgroundColor: colors.low,
     flex: 1 / 3,
   },
   bar4: {
     borderRadius: 3,
     height: 8,
-    backgroundColor: '#FFD8A5',
+    backgroundColor: colors.idle,
     flex: 1 / 4,
   },
   sectionTitle: {
     marginTop: 24,
     marginBottom: 10,
     fontWeight: 500,
-    color: '#FFF',
+    color: colors.white,
     fontSize: 16,
   },
 });

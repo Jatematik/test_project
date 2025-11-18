@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme/colors';
 
 export const styles = StyleSheet.create({
   container: {
@@ -20,16 +21,21 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: 16,
-    color: '#FFFFFF',
+    color: colors.white,
     lineHeight: 18,
   },
   arrow: {
     top: 1,
   },
-  qr: {
+  btn: {
     width: 40,
     height: 40,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  buttons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
   },
 });

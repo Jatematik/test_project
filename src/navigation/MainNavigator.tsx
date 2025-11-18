@@ -4,7 +4,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { RootStackParamList, Routes } from '../types';
 import {
-  HomeScreen,
   AnalyticsScreen,
   ChatsScreen,
   HistoryScreen,
@@ -17,6 +16,8 @@ import {
   HistoryIcon,
   PaymentIcon,
 } from '../assets/icons';
+import HomeNavigator from './HomeNavigator';
+import { colors } from '../theme/colors';
 
 const Tab = createBottomTabNavigator<RootStackParamList>();
 
@@ -28,7 +29,7 @@ const MainNavigator = () => {
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: '#000000',
+          backgroundColor: colors.black,
           borderTopWidth: 0,
           height: 57 + bottom,
         },
@@ -37,25 +38,35 @@ const MainNavigator = () => {
 
           switch (route.name) {
             case Routes.Home:
-              icon = <HomeIcon iconColor={focused ? '#FE5900' : '#FFFFFF'} />;
+              icon = (
+                <HomeIcon iconColor={focused ? colors.medium : colors.white} />
+              );
               break;
             case Routes.Payments:
               icon = (
-                <PaymentIcon iconColor={focused ? '#FE5900' : '#FFFFFF'} />
+                <PaymentIcon
+                  iconColor={focused ? colors.medium : colors.white}
+                />
               );
               break;
             case Routes.History:
               icon = (
-                <HistoryIcon iconColor={focused ? '#FE5900' : '#FFFFFF'} />
+                <HistoryIcon
+                  iconColor={focused ? colors.medium : colors.white}
+                />
               );
               break;
             case Routes.Analytics:
               icon = (
-                <AnalyticsIcon iconColor={focused ? '#FE5900' : '#FFFFFF'} />
+                <AnalyticsIcon
+                  iconColor={focused ? colors.medium : colors.white}
+                />
               );
               break;
             case Routes.Chats:
-              icon = <ChatsIcon iconColor={focused ? '#FE5900' : '#FFFFFF'} />;
+              icon = (
+                <ChatsIcon iconColor={focused ? colors.medium : colors.white} />
+              );
               break;
             default:
               break;
@@ -67,7 +78,7 @@ const MainNavigator = () => {
           <Text
             style={{
               fontSize: 12,
-              color: focused ? '#FE5900' : '#FFFFFF',
+              color: focused ? colors.medium : colors.white,
             }}
           >
             {children}
@@ -75,7 +86,7 @@ const MainNavigator = () => {
         ),
       })}
     >
-      <Tab.Screen name={Routes.Home} component={HomeScreen} />
+      <Tab.Screen name={Routes.Home} component={HomeNavigator} />
       <Tab.Screen name={Routes.Payments} component={PaymentsScreen} />
       <Tab.Screen name={Routes.History} component={HistoryScreen} />
       <Tab.Screen name={Routes.Analytics} component={AnalyticsScreen} />

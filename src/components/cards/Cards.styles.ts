@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme/colors';
 
 export const styles = StyleSheet.create({
   container: {
@@ -7,7 +8,7 @@ export const styles = StyleSheet.create({
     gap: 8,
   },
   plus: {
-    backgroundColor: '#0F0F0F',
+    backgroundColor: colors.black0F,
     justifyContent: 'center',
     alignItems: 'center',
     flex: 1,

@@ -1,5 +1,6 @@
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { styles } from './ExpensesItem.styles';
+import { colors } from '../../theme/colors';
 
 interface ExpensesItemProps {
   item: {
@@ -12,12 +13,6 @@ interface ExpensesItemProps {
     circle: 'high' | 'medium' | 'low';
   };
 }
-
-const colors = {
-  high: '#CC3F02',
-  medium: '#FE5900',
-  low: '#FF9332',
-};
 
 export const ExpensesItem = ({ item }: ExpensesItemProps) => {
   return (

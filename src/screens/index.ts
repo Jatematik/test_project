@@ -3,3 +3,4 @@ export * from './payments';
 export * from './analytics';
 export * from './chats';
 export * from './history';
+export * from './notificationsTabs';

@@ -12,3 +12,8 @@ export * from './bonus';
 export * from './support';
 export * from './mastercard';
 export * from './plus';
+export * from './notifications';
+export * from './back';
+export * from './message';
+export * from './transfer';
+export * from './shield';

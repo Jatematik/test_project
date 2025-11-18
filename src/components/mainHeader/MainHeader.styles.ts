@@ -3,21 +3,21 @@ import { colors } from '../../theme/colors';
 
 export const styles = StyleSheet.create({
   container: {
-    paddingTop: 24,
+    padding: 16,
+    backgroundColor: colors.black,
     flexDirection: 'row',
-    paddingHorizontal: 16,
     justifyContent: 'space-between',
     alignItems: 'center',
   },
   button: {
-    width: 64,
-    height: 64,
-    paddingVertical: 7.5,
-    justifyContent: 'space-between',
+    width: 24,
+    height: 24,
+    justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
-    fontSize: 14,
+    fontWeight: 500,
+    fontSize: 21,
     color: colors.white,
   },
 });

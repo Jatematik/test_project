@@ -1,9 +1,10 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme/colors';
 
 export const styles = StyleSheet.create({
   container: {
     borderRadius: 16,
-    backgroundColor: '#0F0F0F',
+    backgroundColor: colors.black0F,
     padding: 16,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -14,15 +15,15 @@ export const styles = StyleSheet.create({
     gap: 12,
   },
   textWrapper: { justifyContent: 'space-between' },
-  name: { fontSize: 14, fontWeight: 500, color: '#FFFFFF' },
-  purpose: { fontSize: 14, color: '#B3B3B3' },
+  name: { fontSize: 14, fontWeight: 500, color: colors.white },
+  purpose: { fontSize: 14, color: colors.date },
   cash: {
     fontSize: 14,
     fontWeight: 500,
-    color: '#FFFFFF',
+    color: colors.white,
     marginLeft: 'auto',
   },
-  date: { fontSize: 14, color: '#B3B3B3', marginLeft: 'auto' },
+  date: { fontSize: 14, color: colors.date, marginLeft: 'auto' },
   purposeWrapper: {
     flexDirection: 'row',
     alignItems: 'center',

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../../theme/colors';
 
 export const styles = StyleSheet.create({
   container: {
@@ -25,11 +26,11 @@ export const styles = StyleSheet.create({
   },
   cash: {
     fontSize: 18,
-    color: '#fff',
+    color: colors.white,
     fontWeight: 700,
   },
   text: {
     fontSize: 14,
-    color: '#fff',
+    color: colors.white,
   },
 });
